@@ -8,6 +8,13 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <nav>
+          <ul>
+            <li><Link to="/">Index</Link></li>
+            <li><Link to="/second">Second</Link></li>
+            <li><Link to="/third">Third</Link></li>
+          </ul>
+        </nav>
         <Switch>
           <Route exact path="/" component={Index} />
           <Route exact path="/second" component={Second} />
